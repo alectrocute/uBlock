@@ -440,6 +440,12 @@ const renderPopup = function() {
         'advancedUser',
         popupData.advancedUserEnabled === true
     );
+    
+    // https://github.com/uBlockOrigin/uBlock-issues/issues/785
+    if (popupData.advancedUserEnabled) {
+        elem.style.minHeight = µb.hiddenSettings.popupWindowHeight
+    }
+    
     elem.classList.toggle(
         'off',
         popupData.pageURL === '' || popupData.netFilteringSwitch !== true
