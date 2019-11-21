@@ -29,6 +29,8 @@
 
 /******************************************************************************/
 
+const µb = µBlock;
+    
 let popupFontSize = vAPI.localStorage.getItem('popupFontSize');
 if ( typeof popupFontSize === 'string' && popupFontSize !== 'unset' ) {
     document.body.style.setProperty('font-size', popupFontSize);
