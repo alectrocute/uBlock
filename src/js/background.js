@@ -61,6 +61,7 @@ const µBlock = (( ) => { // jshint ignore:line
         loggerPopupType: 'popup',
         manualUpdateAssetFetchPeriod: 500,
         popupFontSize: 'unset',
+        popupWindowHeight: 500,
         requestJournalProcessPeriod: 1000,
         selfieAfter: 3,
         strictBlockingBypassDuration: 120,
